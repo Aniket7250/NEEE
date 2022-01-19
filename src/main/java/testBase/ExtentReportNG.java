@@ -51,7 +51,7 @@ public class ExtentReportNG {
 	public static String getReportPath(String actualDate) {
 		
 		String reportPath = System.getProperty("user.dir")+
-				"/Reports/ExecutionReport_"+actualDate+".html";
+				"/Reports/ExecutionReport.html";
 		return reportPath;
 		
 	}
