@@ -27,6 +27,7 @@ import testBase.TestBase;
 
 
 
+
 public class QuoteTest extends TestBase{
 	LoginPageObjects loginPage = new LoginPageObjects();
 	HomePageObjects homePage = new HomePageObjects();
@@ -64,7 +65,7 @@ public class QuoteTest extends TestBase{
 //		MyLogger.startTestCase(new Throwable().getStackTrace()[0].getMethodName());
 		MyLogger.startTestCase(testData.get("Test Case Name")+ " "+new Date().getTime());
 		loginPage.login(testData);
-		assertTrue("This will fail!", false);
+		assertEqualsString_custom(true,false,"This will fail!");
 	/*	homePage.clickOnNewQuote();
 		beforeQuotePage.navigateToQuotePage(testData);
 		quotePage.enterQuoteDetails(testData);
