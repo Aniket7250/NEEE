@@ -65,7 +65,7 @@ public class QuoteTest extends TestBase{
 //		MyLogger.startTestCase(new Throwable().getStackTrace()[0].getMethodName());
 		MyLogger.startTestCase(testData.get("Test Case Name")+ " "+new Date().getTime());
 		loginPage.login(testData);
-		assertEqualsString_custom(true,false,"This will fail!");
+		assertEqualsString_custom(true,true,"This will fail!");
 	/*	homePage.clickOnNewQuote();
 		beforeQuotePage.navigateToQuotePage(testData);
 		quotePage.enterQuoteDetails(testData);
